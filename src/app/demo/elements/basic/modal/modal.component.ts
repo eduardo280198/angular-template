@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {CardModule} from "../../../../theme/shared/components";
 
 @Component({
   selector: 'app-modal',
   standalone: true,
-  imports: [CommonModule, CardModule],
+  imports: [CardModule],
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss']
 })

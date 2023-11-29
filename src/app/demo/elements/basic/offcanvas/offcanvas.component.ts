@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-offcanvas',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './offcanvas.component.html',
   styleUrls: ['./offcanvas.component.scss']
 })

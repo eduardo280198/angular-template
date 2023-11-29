@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-list-group',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './list-group.component.html',
   styleUrls: ['./list-group.component.scss']
 })

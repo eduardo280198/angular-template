@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import {CardModule} from "../../../../theme/shared/components";
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule, CardModule, NgOptimizedImage],
+  imports: [CardModule, NgOptimizedImage],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })

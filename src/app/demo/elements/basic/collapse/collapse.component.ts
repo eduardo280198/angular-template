@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-collapse',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './collapse.component.html',
   styleUrls: ['./collapse.component.scss']
 })
