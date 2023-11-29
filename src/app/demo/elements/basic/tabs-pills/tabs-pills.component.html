@@ -1,0 +1,393 @@
+<div class="row">
+
+  <!--
+    Basic tabs
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Basic Tabs'"
+    >
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+        <li class="nav-item" role="presentation">
+
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            Home
+          </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Profile
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            Contact
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="disabled-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#disabled-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="disabled-tab-pane"
+            aria-selected="false"
+            disabled
+          >
+            Disabled
+          </button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          Home
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          Profile
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          Contact
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-tab"
+          tabindex="0"
+        >
+          Disabled
+        </div>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Pills tabs
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Basic Pills'"
+    >
+
+      <ul class="nav nav-pills" id="myPills" role="tablist">
+
+        <li class="nav-item" role="presentation">
+
+          <button
+            class="nav-link active"
+            id="home-pills"
+            data-bs-toggle="tab"
+            data-bs-target="#home-pills-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-pills-pane"
+            aria-selected="true"
+          >
+            Home
+          </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-pills"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-pills-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-pills-pane"
+            aria-selected="false"
+          >
+            Profile
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-pills"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-pills-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-pills-pane"
+            aria-selected="false"
+          >
+            Contact
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="disabled-pills"
+            data-bs-toggle="tab"
+            data-bs-target="#disabled-pills-pane"
+            type="button"
+            role="tab"
+            aria-controls="disabled-pills-pane"
+            aria-selected="false"
+            disabled
+          >
+            Disabled
+          </button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" id="myPillsContent">
+
+        <div
+          class="tab-pane fade show active"
+          id="home-pills-pane"
+          role="tabpanel"
+          aria-labelledby="home-pills"
+          tabindex="0"
+        >
+          Home
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="profile-pills-pane"
+          role="tabpanel"
+          aria-labelledby="profile-pills"
+          tabindex="0"
+        >
+          Profile
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="contact-pills-pane"
+          role="tabpanel"
+          aria-labelledby="contact-pills"
+          tabindex="0"
+        >
+          Contact
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="disabled-pills-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-pills"
+          tabindex="0"
+        >
+          Disabled
+        </div>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Vertical Pills
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Vertical Pills'"
+    >
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-12">
+
+          <ul class="flex-column nav nav-pills" id="verticalPills" role="tablist">
+
+            <li class="nav-item" role="presentation">
+
+              <a
+                class="nav-link text-center active"
+                id="home-vertical-pills"
+                data-bs-toggle="tab"
+                data-bs-target="#home-vertical-pills-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-vertical-pills-pane"
+                aria-selected="true"
+              >
+                Home
+              </a>
+
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link text-center"
+                id="profile-vertical-pills"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-vertical-pills-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-vertical-pills-pane"
+                aria-selected="false"
+              >
+                Profile
+              </a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link text-center"
+                id="contact-vertical-pills"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-vertical-pills-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-vertical-pills-pane"
+                aria-selected="false"
+              >
+                Contact
+              </a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link text-center disabled"
+                id="disabled-vertical-pills"
+                data-bs-toggle="tab"
+                data-bs-target="#disabled-vertical-pills-pane"
+                type="button"
+                role="tab"
+                aria-controls="disabled-vertical-pills-pane"
+                aria-selected="false"
+                disabled
+              >
+                Disabled
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-md-9 col-sm-12">
+
+          <div class="ms-4 tab-content">
+
+            <div class="tab-content" id="verticalPillsContent">
+
+              <div
+                class="tab-pane  fade show active"
+                id="home-vertical-pills-pane"
+                role="tabpanel"
+                aria-labelledby="home-vertical-pills"
+                tabindex="0"
+              >
+                Home
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="profile-vertical-pills-pane"
+                role="tabpanel"
+                aria-labelledby="profile-vertical-pills"
+                tabindex="0"
+              >
+                Profile
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="contact-vertical-pills-pane"
+                role="tabpanel"
+                aria-labelledby="contact-vertical-pills"
+                tabindex="0"
+              >
+                Contact
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="disabled-vertical-pills-pane"
+                role="tabpanel"
+                aria-labelledby="disabled-vertical-pills"
+                tabindex="0"
+              >
+                Disabled
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </app-card>
+
+  </div>
+
+</div>

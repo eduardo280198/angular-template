@@ -1,0 +1,180 @@
+<div class="row">
+
+  <!--
+    Basic Pagination
+  -->
+  <div class="col-sm-12 col-md-6 col-xl-4">
+
+    <app-card
+      [cardTitle]="'Basic Pagination'"
+    >
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a></li>
+        </ul>
+      </nav>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Pagination With Icons
+  -->
+  <div class="col-sm-12 col-md-6 col-xl-4">
+
+    <app-card
+      [cardTitle]="'Pagination With Icons'"
+    >
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Disabled and Active States
+  -->
+  <div class="col-sm-12 col-md-6 col-xl-4">
+
+    <app-card
+      [cardTitle]="'Disabled and Active States'"
+    >
+
+      <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="javascript:void(0)">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="javascript:void(0)">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="javascript:void(0)">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Sizing
+  -->
+  <div class="col-sm-12 col-md-6 col-xl-4">
+
+    <app-card
+      [cardTitle]="'Sizing'"
+    >
+
+      <div class="row">
+
+        <p>
+          Add <code>.pagination-lg</code>
+        </p>
+
+        <nav aria-label="...">
+          <ul class="pagination pagination-lg">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+          </ul>
+        </nav>
+
+        <hr>
+
+        <p>
+          or <code>.pagination-sm</code> for additional sizes
+        </p>
+
+        <nav aria-label="...">
+          <ul class="pagination pagination-sm">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Alignment
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Alignment'"
+    >
+
+      <div class="row">
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="javascript:void(0)">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0)">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+        <hr>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="javascript:void(0)">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="javascript:void(0)">Next</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+</div>

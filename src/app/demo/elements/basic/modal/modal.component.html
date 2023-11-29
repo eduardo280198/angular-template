@@ -1,0 +1,954 @@
+<div class="row">
+
+  <!--
+    Demo Modal
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Demo Modal'"
+    >
+
+      <!--
+        Modal Example
+      -->
+      <div class="bd-example-modal bg-body-tertiary mb-3">
+
+        <div class="modal position-static d-block" tabindex="-1">
+
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!--
+        Button trigger Modal
+      -->
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Launch demo Modal
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Static Backdrop
+  -->
+  <div class="col-xl-4 col-md-6">
+
+    <app-card
+      [cardTitle]="'Static Backdrop'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Launch Static Backdrop Modal
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Scrolling Long Content
+  -->
+  <div class="col-xl-4 col-md-6">
+
+    <app-card
+      [cardTitle]="'Scrolling Long Content'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#scrollingModal"
+      >
+        Launch Scrolling Modal
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Vertically Centered
+  -->
+  <div class="col-xl-4 col-md-6">
+
+    <app-card
+      [cardTitle]="'Vertically Centered'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#verticallyCenteredModal"
+      >
+        Launch Vertically Centered
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Tooltip and popovers
+  -->
+  <div class="col-xl-4 col-md-6">
+
+    <app-card
+      [cardTitle]="'Tooltip and Popovers'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#tooltipModal"
+      >
+        Launch Tooltip and Popovers
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Using the grid.
+  -->
+  <div class="col-xl-4 col-md-6">
+
+    <app-card
+      [cardTitle]="'Using the grid'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#gridModal"
+      >
+        Launch Grid Modal
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Optional Sizes
+  -->
+  <div class="col-xl-4 col-md-6">
+
+    <app-card
+      [cardTitle]="'Optional Sizes'"
+    >
+
+      <!-- Button Small Modal -->
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#smallModal"
+      >
+        Small Modal
+      </button>
+
+      <!-- Button Large Modal -->
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#largeModal"
+      >
+        Large Modal
+      </button>
+
+      <!-- Button Extra Large Modal -->
+      <button
+        type="button"
+        class="btn btn-primary mb-2"
+        data-bs-toggle="modal"
+        data-bs-target="#extraLargeModal"
+      >
+        Extra Large Modal
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Toggle Between Modals
+  -->
+  <div class="col-xl-4 col-md-6">
+    <app-card
+      [cardTitle]="'Toggle Between Modals'"
+    >
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#toggleBetweenModal"
+      >
+        Open First Modal
+      </button>
+    </app-card>
+  </div>
+
+  <!--
+    Fullscreen Modal
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Full Screen Modal'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#fullscreenModal"
+      >
+        Full screen
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#fullscreenSmModal"
+      >
+        Full screen below sm
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#fullscreenMdModal"
+      >
+        Full screen below md
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#fullscreenLgModal"
+      >
+        Full screen below lg
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#fullscreenXlModal"
+      >
+        Full screen below xl
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2"
+        data-bs-toggle="modal"
+        data-bs-target="#fullscreenXxlModal"
+      >
+        Full screen below xxl
+      </button>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Varying modal content
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Varying Modal Content'"
+    >
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#varyingModalContent"
+        data-bs-whatever="@mdo"
+      >
+        Open Modal for @mdo
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2 me-2"
+        data-bs-toggle="modal"
+        data-bs-target="#varyingModalContent"
+        data-bs-whatever="@fat"
+      >
+        Open Modal for @fat
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary mb-2"
+        data-bs-toggle="modal"
+        data-bs-target="#varyingModalContent"
+        data-bs-whatever="@getbootstrap"
+      >
+        Open Modal for @getbootstrap
+      </button>
+
+    </app-card>
+  </div>
+
+</div>
+
+<!-- Modals -->
+
+<!--
+  #exampleModal
+-->
+<div
+  id="exampleModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque aut ea in quis recusandae?
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #staticBackdrop
+-->
+<div
+  id="staticBackdrop"
+  class="modal fade"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at ea eius enim, expedita illum inventore minus molestiae neque nihil, possimus, quisquam saepe tempore vitae.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  #scrolligModal
+-->
+<div
+  id="scrollingModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="scrollingModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="scrollingModalLabel">Modal Title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate fuga iusto non quos tempore!
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>Lorem ipsum dolor sit amet.
+        <br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, consectetur.
+        <br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ducimus et harum iure magni sequi?
+        <br><br><br><br><br><br><br><br><br><br><br><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis cum distinctio illo ipsa magnam quod, sed similique sit tenetur. Quasi rerum saepe totam voluptatum!
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #verticallyCenteredModal
+-->
+<div
+  id="verticallyCenteredModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="verticallyCenteredModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="verticallyCenteredModalLabel">Modal Title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus odit perspiciatis
+        reprehenderit sed veritatis vero vitae! Consectetur enim error fugiat inventore iste, nisi non obcaecati?
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #tooltipModal
+-->
+<!--TODO: Buscar alguna solucion, no funciona como en la documentacion de Bootstrap...-->
+<div
+  id="tooltipModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="tooltipModalLabel"
+  aria-hidden="true"
+>
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="tooltipModalLabel">Modal Title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <h2 class="fs-5">Popover in a modal</h2>
+        <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</button> triggers a popover on click.</p>
+        <hr>
+        <h2 class="fs-5">Tooltips in a modal</h2>
+        <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!--
+  #gridModal
+-->
+<!--TODO: Hacer que luzca como en la documentacion-->
+<div
+  id="gridModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="gridModalLabel"
+  aria-hidden="true"
+>
+
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="gridModalLabel">Grids in modals</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="container-fluid bd-example-row">
+          <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+            <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                  Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                  Level 2: .col-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Optional Sizes -->
+
+<!--
+  #smallModal
+-->
+<div
+  id="smallModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="smallModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="smallModalLabel">Small Modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">...</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #largeModal
+-->
+<div
+  id="largeModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="largeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="largeModalLabel">Small Modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">...</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #extraLargeModal
+-->
+<div
+  id="extraLargeModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="extraLargeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="extraLargeModalLabel">Small Modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">...</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-------------------->
+
+<!-- Toggle between modal -->
+
+<!--
+  #toggleBetweenModal
+-->
+<div
+  id="toggleBetweenModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="toggleBetweenModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="toggleBetweenModalLabel">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+
+      <div class="modal-footer">
+        <button
+          class="btn btn-primary"
+          data-bs-target="#toggleBetweenModal2"
+          data-bs-toggle="modal"
+        >
+          Open second modal
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #toggleBetweenModal2
+-->
+<div
+  id="toggleBetweenModal2"
+  class="modal fade"
+  aria-hidden="true"
+  aria-labelledby="toggleBetweenModalLabel2"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="toggleBetweenModalLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+
+      <div class="modal-footer">
+        <button
+          class="btn btn-primary"
+          data-bs-target="#toggleBetweenModal"
+          data-bs-toggle="modal"
+        >
+          Back to first
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--------------------------->
+
+<!-- Full Screen Modal -->
+
+<!--
+  #fullscreenModal
+-->
+<div
+  id="fullscreenModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="fullscreenModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="fullscreenModalLabel">Full Screen Modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #fullscreenSmModal
+-->
+<div
+  id="fullscreenSmModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="fullscreenSmModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="fullscreenSmModalLabel">Full screen below sm</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        ...
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #fullscreenMdModal
+-->
+<div
+  id="fullscreenMdModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="fullscreenMdModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen-md-down">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="fullscreenMdModalLabel">Full screen below md</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        ...
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #fullscreenLgModal
+-->
+<div
+  id="fullscreenLgModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="fullscreenLgModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen-lg-down">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="fullscreenLgModalLabel">Full screen below lg</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        ...
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #fullscreenXlModal
+-->
+<div
+  id="fullscreenXlModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="fullscreenXlModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen-xl-down">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="fullscreenXlModalLabel">Full screen below xl</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        ...
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+  #fullscreenXxlModal
+-->
+<div
+  id="fullscreenXxlModal"
+  class="modal fade"
+  tabindex="-1"
+  aria-labelledby="fullscreenXxlModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-fullscreen-xxl-down">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="fullscreenXxlModalLabel">Full screen below xxl</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        ...
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!------------------>
+
+<!--
+  #varyingModalContent
+-->
+<!--TODO: No hace lo que deberia, no pone el valor de data-bs-whatever de los botones en el campo de 'Recipient:' checar la documentacion-->
+<div
+  class="modal fade"
+  id="varyingModalContent"
+  tabindex="-1"
+  aria-labelledby="varyingModalContentLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="varyingModalContentLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>

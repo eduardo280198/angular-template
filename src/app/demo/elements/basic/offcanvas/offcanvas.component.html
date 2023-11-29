@@ -1,0 +1,484 @@
+<div class="row">
+
+  <!--
+    Live Demo
+  -->
+  <div class="col-sm-12">
+
+    <div class="card">
+      <div class="card-header">
+        <h5>Live Demo</h5>
+      </div>
+
+      <div class="card-body btn-page">
+
+        <div class="bd-example-modal mb-4">
+
+              <!--
+                TODO: Arreglar esta parte para que se pueda mostrar el modal siempre...
+              -->
+<!--          <div-->
+<!--            class="offcanvas offcanvas-start show"-->
+<!--            tabindex="-1"-->
+<!--            id="offcanvas"-->
+<!--            aria-labelledby="offcanvasLabel"-->
+<!--          >-->
+<!--            <div class="offcanvas-header">-->
+<!--              <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>-->
+<!--              <button-->
+<!--                type="button"-->
+<!--                class="btn-close"-->
+<!--                data-bs-dismiss="offcanvas"-->
+<!--                aria-label="Close"-->
+<!--              ></button>-->
+<!--            </div>-->
+
+<!--            <div class="offcanvas-body">-->
+<!--              Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.-->
+<!--            </div>-->
+
+<!--          </div>-->
+
+        </div>
+
+        <!--
+          Link with href
+        -->
+        <a
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+        >
+          Link with href
+        </a>
+
+        <!--
+          Button with data-bs-target
+        -->
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offCanvasExample"
+        >
+          Button with data-bs-target
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--
+    Placement
+  -->
+  <div class="col-sm-12">
+    <div class="card">
+
+      <div class="card-header">
+        <h5>Placement</h5>
+      </div>
+
+      <div class="card-body btn-page">
+
+        <!--
+          Offcanvas Start
+        -->
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="#offcanvasExample"
+        >
+          Start Offcanvas
+        </button>
+
+        <!--
+          Offcanvas Top
+        -->
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
+        >
+          Top Offfcanvas
+        </button>
+
+        <!--
+          Offcanvas End
+        -->
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasEnd"
+          aria-controls="offcanvasEnd"
+        >
+          End Offcanvas
+        </button>
+
+        <!--
+          Offcanvas Bottom
+        -->
+        <button
+          class="btn btn-secondary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom"
+          aria-controls="offcanvasBottom"
+        >
+          Bottom Offcanvas
+        </button>
+
+      </div>
+
+    </div>
+
+  <!--
+    Backdrop
+  -->
+    <div class="col-sm-12">
+
+      <div class="card">
+        <div class="card-header">
+          <h5>Offcanvas Backdrop</h5>
+        </div>
+
+        <div class="card-body btn-page">
+
+          <!--
+             Scrolling and backdrop
+           -->
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            Enabled Backdrop and Scrolling
+          </button>
+
+          <!--
+            offcanvas Static
+          -->
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasStaticBackdrop"
+            aria-controls="offcanvasStaticBackdrop"
+          >
+            Static Backdrop
+          </button>
+
+          <!--
+            Body Scrolling
+          -->
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            Body Scrolling
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas default(?
+    .offcanvas-start
+  -->
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+
+      <div class="dropdown mt-3">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas Top
+    .offcanvas-top
+  -->
+  <div
+    class="offcanvas offcanvas-top"
+    tabindex="-1"
+    id="offcanvasTop"
+    aria-labelledby="offcanvasTopLabel"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+
+      <div class="dropdown mt-3">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas End
+    .offcanvas-end
+  -->
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasEnd"
+    aria-labelledby="offcanvasEndLabel"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasEndLabel">Offcanvas</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+
+      <div class="dropdown mt-3">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas Bottom
+    .offcanvas-bottom
+  -->
+  <div
+    class="offcanvas offcanvas-bottom"
+    tabindex="-1"
+    id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+
+      <div class="dropdown mt-3">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas Scrolling and Backdrop
+  -->
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    data-bs-scroll="true"
+    id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptions"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Offcanvas with Scroll</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <p>
+        Try Scrolling the rest of the page to see this option in action...
+      </p>
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas Static Backdrop
+  -->
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    data-bs-backdrop="static"
+    id="offcanvasStaticBackdrop"
+    aria-labelledby="offcanvasStaticBackdrop"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasStaticBackdropLabel">Offcanvas Static Backdrop</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <p>
+        I will not close if your click outside me
+      </p>
+    </div>
+
+  </div>
+
+  <!--
+    Offcanvas Body Scrolling
+  -->
+  <div
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    data-bs-scroll="true"
+    data-bs-backdrop="false"
+    id="offcanvasScrolling"
+    aria-labelledby="offcanvasScrolling"
+  >
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas Body Scrolling</h5>
+      <button
+        class="btn-close"
+        type="button"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <p>
+        Try scrolling the rest of the page to see this option in action.
+      </p>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,1281 @@
+<!--
+  TODO: Hacer que se vean las flechas del dropdown
+-->
+<div class="row">
+
+  <!--
+    Basic Dropdown Button
+  -->
+  <div class="col-sm-12 col-md-6">
+
+    <app-card
+      [cardTitle]="'Basic Dropdown Button'"
+    >
+
+      <!-- Primary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Primary
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Secondary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Secondary
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Success -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Success
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Danger -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Danger
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Warning -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-warning dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Warning
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Info -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-info dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Info
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Split Dropdown Button
+  -->
+  <div class="col-sm-12 col-md-6">
+
+    <app-card
+      [cardTitle]="'Split Dropdown Button'"
+    >
+
+      <!-- Primary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Secondary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Success -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Danger -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Warning -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Info -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Basic Outline Dropdown Button
+  -->
+  <div class="col-sm-12 col-md-6">
+
+    <app-card
+      [cardTitle]="'Basic Outline Dropdown Button'"
+    >
+
+      <!-- Primary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-outline-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Primary
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Secondary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Secondary
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Success -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-outline-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Success
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Danger -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-outline-danger dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Danger
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Warning -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-outline-warning dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Warning
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Info -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-outline-info dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Info
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Split Outline Dropdown Button
+  -->
+  <div class="col-sm-12 col-md-6">
+
+    <app-card
+      [cardTitle]="'Split Dropdown Button'"
+    >
+
+      <!-- Primary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Secondary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Success -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Danger -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Warning -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Info -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Dark Dropdowns
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Dark Dropdowns'"
+    >
+
+      <!-- Primary -->
+      <div class="btn-group mb-2 me-2 dropdown" >
+
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Primary
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Secondary -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Secondary
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Success -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Success
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Danger -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-danger dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Danger
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Warning -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-warning dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Warning
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Info -->
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-info dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Info
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    DropRight (DropEnd)
+  -->
+  <div class="col-sm-4">
+
+    <app-card
+      [cardTitle]="'DropRight (DropEnd)'"
+    >
+
+      <!-- Basic -->
+      <div class="btn-group mb-2 me-2 dropdown dropend" >
+
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          DropRight
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Split -->
+      <div class="btn-group mb-2 me-2 dropdown dropend">
+
+        <button type="button" class="btn btn-light-primary">DropRight</button>
+        <button type="button" class="btn btn-light-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    DropUp
+  -->
+  <div class="col-sm-4">
+
+    <app-card
+      [cardTitle]="'DropUp'"
+    >
+
+      <!-- Basic -->
+      <div class="btn-group mb-2 me-2 dropdown dropup" >
+
+        <button
+          type="button"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          DropUp
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Split -->
+      <div class="btn-group mb-2 me-2 dropdown dropup">
+
+        <button type="button" class="btn btn-light-secondary">DropUp</button>
+        <button type="button" class="btn btn-light-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    DropLeft
+  -->
+  <div class="col-sm-4">
+
+    <app-card
+      [cardTitle]="'DropLeft (DropStart)'"
+    >
+
+      <!-- Basic -->
+      <div class="btn-group mb-2 me-2 dropdown dropstart" >
+
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          DropLeft
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Split -->
+      <div class="btn-group mb-2 me-2 dropdown dropstart">
+
+        <button type="button" class="btn btn-light-primary">DropLeft</button>
+        <button type="button" class="btn btn-light-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Menu alignment
+  -->
+  <div class="col-sm-12 col-md-6">
+
+    <app-card
+      [cardTitle]="'Menu Alignment'"
+    >
+
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Ejemplo de menu alineado a la derecha.
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><button class="dropdown-item" type="button">Action</button></li>
+          <li><button class="dropdown-item" type="button">Another Action</button></li>
+          <li><button class="dropdown-item" type="button">Something else here</button></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Responsive Alignment
+  -->
+  <div class="col-sm-12 col-md-6">
+
+    <app-card
+      [cardTitle]="'Responsive Alignment'"
+    >
+
+      <div class="btn-group mb-2 me-2 dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          Left-aligned but right aligned when large screen
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+          <li><button class="dropdown-item" type="button">Action</button></li>
+          <li><button class="dropdown-item" type="button">Another action</button></li>
+          <li><button class="dropdown-item" type="button">Something else here</button></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          Right-aligned but left aligned when large screen
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+          <li><button class="dropdown-item" type="button">Action</button></li>
+          <li><button class="dropdown-item" type="button">Another action</button></li>
+          <li><button class="dropdown-item" type="button">Something else here</button></li>
+        </ul>
+      </div>
+
+    </app-card>
+  </div>
+
+  <!--
+    Alignment Options
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Alignment Options'"
+    >
+
+      <div class="btn-group mb-2 me-2 dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Right-aligned menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          Left-aligned, right-aligned lg
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          Right-aligned, left-aligned lg
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown dropstart">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropstart
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown dropend">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropend
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group mb-2 me-2 dropdown dropup">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropup
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Text
+  -->
+  <div class="col-sm-4">
+
+    <app-card
+      [cardTitle]="'Text'"
+    >
+
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="true"
+        >
+          Text
+        </button>
+
+        <div class="dropdown-menu p-4 text-body-secondary">
+
+          <h6>Some title example</h6>
+
+          <p class="text-muted">
+            Some Example text that's free-flowing within the dropdown menu.
+          </p>
+          <p class="text-muted mb-0">
+            And this is more example text.
+          </p>
+
+        </div>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Forms
+  -->
+  <div class="col-sm-4">
+
+    <app-card
+      [cardTitle]="'Forms'"
+    >
+
+      <div class="btn-group mb-2 me-2 dropdown">
+
+        <button
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="true"
+        >
+          Form
+        </button>
+
+        <div class="dropdown-menu">
+
+          <form class="px-4 py-3">
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input id="email" type="email" class="form-control" placeholder="email@example.com">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input id="password" type="password" class="form-control" placeholder="password">
+            </div>
+
+            <div class="mb-3">
+              <input id="remember" type="checkbox" class="form-check-input me-2">
+              <label for="remember" class="form-check-label">Remember me.</label>
+            </div>
+
+            <div class="mb-3 btn-group mb-2 me-2 gap-2">
+              <button type="submit" class="btn btn-secondary btn-sm">Sign in</button>
+              <button type="button" class="btn btn-light-primary btn-sm">Reset</button>
+            </div>
+
+          </form>
+
+          <div class="dropdown-divider"></div>
+
+          <a href="javascript:void(0)" class="dropdown-item">New around here? Sign up</a>
+          <a href="javascript:void(0)" class="dropdown-item">Forgot password?</a>
+
+        </div>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Offset y Reference
+  -->
+  <div class="col-sm-4">
+
+    <app-card
+      [cardTitle]="'Offset y References'"
+    >
+
+      <div class="row">
+
+        <!--
+          Offset
+        -->
+        <div class="col-xl-6">
+
+          <div class="me-1 mb-1 dropdown">
+
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-offset="10,20"
+            >
+              Offset
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <!--
+          Reference
+        -->
+        <div class="col-xl-6">
+
+          <div class="me-1 dropdown btn-group">
+
+            <button
+              class="btn btn-secondary"
+              type="button"
+            >
+              Reference
+            </button>
+
+            <button
+              class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-reference="parent"
+            >
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Another Action</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Separated Link</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Auto Close Behavior
+  -->
+  <div class="col-sm-12">
+
+    <app-card
+      [cardTitle]="'Auto Close Behavior'"
+    >
+
+      <!--
+        Default Dropdown
+      -->
+      <div class="btn-group me-2 mb-2 dropup">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="true"
+          aria-expanded="false"
+        >
+          Default Dropdown
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+        </ul>
+
+      </div>
+
+      <!--
+        Clickable inside
+      -->
+      <div class="btn-group me-2 mb-2 dropup">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="inside"
+          aria-expanded="false"
+        >
+          Clickable Inside
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+        </ul>
+
+      </div>
+
+      <!--
+        Clickable Outside
+      -->
+      <div class="btn-group me-2 mb-2 dropup">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="outside"
+          aria-expanded="false"
+        >
+          Clickable Outside
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+        </ul>
+
+      </div>
+
+      <!--
+        Manual Close
+      -->
+      <div class="btn-group me-2 mb-2 dropup">
+
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="false"
+          aria-expanded="false"
+        >
+          Manual Close
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+          <li><a class="dropdown-item" href="javascript:void(0)">Menu Item</a></li>
+        </ul>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+</div>
