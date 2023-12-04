@@ -1,1 +1,237 @@
-<p>form-masking works!</p>
+<div class="row">
+
+  <!--
+    Date
+  -->
+  <div class="col-md-6">
+
+    <app-card
+      [cardTitle]="'Date'"
+    >
+      <!-- Date -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Date</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="00/00/0000" placeholder="DD/MM/YYYY">
+        </div>
+      </div>
+
+      <!-- Valid Date -->
+      <div class="row">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Valid Date and Month</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input
+            type="text"
+            class="form-control"
+            mask="d0/M0/0000"
+            [leadZeroDateTime]="true"
+            placeholder="DD/MM/YYYY"
+          >
+        </div>
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Time
+  -->
+  <div class="col-md-6">
+    <app-card
+      [cardTitle]="'Time'"
+    >
+      <!-- Date And Hour -->
+      <div class="row form-group">
+
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Date And Hour</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="00/00/0000 00:00:00" placeholder="DD/MM/YYYY HH:MM:SS">
+        </div>
+
+      </div>
+
+      <!-- Valid 24 hour format  -->
+      <div class="row form-group">
+
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Valid 24 Hour Format</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="Hh:m0:s0" [leadZeroDateTime]="true" placeholder="HH:MM:SS">
+        </div>
+
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <div class="col-md-6">
+
+    <!--
+      Mixed Type
+    -->
+    <app-card
+      [cardTitle]="'Mixed Type'"
+    >
+      <!-- Mixed -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>MIXED</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="AAA 000-S0S" placeholder="AAA 000-S0S">
+        </div>
+      </div>
+
+      <!-- Mask With Special Characters -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Mask With Special Characters</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input
+            type="text"
+            class="form-control"
+            [showMaskTyped]="true"
+            [specialCharacters]="['e', 'x', 't', ' ', '(', ')', '-', '.']"
+            shownMaskExpression="(___) ___-____ ext. ______"
+            mask="(000) 000-0000 ext. 000000"
+          >
+        </div>
+      </div>
+
+      <!-- Dynamic Mask -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Dynamic Mask</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="(00) 00000000||+00 (00) 00000000" placeholder="(00) 00000000||+00 (00) 00000000">
+        </div>
+      </div>
+
+    <!-- Number or letter -->
+      <div class="row form-grop">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Number or letter</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="00||SS" placeholder="Number or Letter">
+        </div>
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Multi Options
+  -->
+  <div class="col-md-6">
+
+    <app-card
+      [cardTitle]="'Multi Options'"
+    >
+
+      <!-- Prefix -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Prefix</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask=" (000) 000 00 00" prefix="+7" placeholder="(000) 000 00 00">
+        </div>
+      </div>
+
+      <!-- Suffix -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Suffix</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="0000" suffix=" $" placeholder="0000 $">
+        </div>
+      </div>
+
+      <!-- Drop Special Character -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Drop Special Character</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="000-000.00" [dropSpecialCharacters]="false" placeholder="000-000.00">
+        </div>
+      </div>
+
+      <!-- Show Mask Typed -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-md-6 col-lg-3 text-lg-end">
+          <label>Show Mask Typed</label>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="(000) 000-0000" [showMaskTyped]="true">
+        </div>
+      </div>
+
+    </app-card>
+
+  </div>
+
+  <!--
+    Separators
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Separators'"
+    >
+
+      <!-- Thousand Separator -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Thousand Separator</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="separator" placeholder="Separator">
+        </div>
+      </div>
+
+      <!-- Dot Separator -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Dot Separator</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="separator" thousandSeparator="." placeholder="Dot Separator">
+        </div>
+      </div>
+
+      <!-- Comma Separator -->
+      <div class="row form-group">
+        <div class="col-form-label col-sm-12 col-lg-3 text-lg-end">
+          <label>Comma Separator</label>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <input type="text" class="form-control" mask="separator" thousandSeparator="," placeholder="Dot Separator">
+        </div>
+      </div>
+
+    </app-card>
+  </div>
+
+</div>
