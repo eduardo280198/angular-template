@@ -284,6 +284,20 @@ const NavigationItems = [
             type    : 'item',
             url     : 'forms/validation',
             target  : false,
+          },
+          {
+            id      : 'form-masking',
+            title   : 'Form Masking',
+            type    : 'item',
+            url     : 'forms/masking',
+            target  : false
+          },
+          {
+            id      : 'form-picker',
+            title   : 'Form Picker',
+            type    : 'item',
+            url     : 'forms/picker',
+            target  : false,
           }
         ]
       },

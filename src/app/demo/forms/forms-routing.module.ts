@@ -13,6 +13,14 @@ export const FORMS_ROUTES : Route[] = [
   {
     path: 'validation',
     loadComponent: () => import('./form-validation/form-validation.component').then( m => m.FormValidationComponent)
+  },
+  {
+    path: 'masking',
+    loadComponent: () => import('./form-masking/form-masking.component').then( m => m.FormMaskingComponent),
+  },
+  {
+    path: 'picker',
+    loadComponent: () => import('./form-picker/form-picker.component').then( m => m.FormPickerComponent),
   }
 
 ]
