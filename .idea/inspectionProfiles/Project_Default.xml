@@ -4,12 +4,42 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="5">
+          <list size="19">
             <item index="0" class="java.lang.String" itemvalue="placement" />
             <item index="1" class="java.lang.String" itemvalue="matinput" />
             <item index="2" class="java.lang.String" itemvalue="thousandseparator" />
             <item index="3" class="java.lang.String" itemvalue="shownmaskexpression" />
             <item index="4" class="java.lang.String" itemvalue="suffix" />
+            <item index="5" class="java.lang.String" itemvalue="atp-time-picker" />
+            <item index="6" class="java.lang.String" itemvalue="onlyhour" />
+            <item index="7" class="java.lang.String" itemvalue="onlyam" />
+            <item index="8" class="java.lang.String" itemvalue="navigation" />
+            <item index="9" class="java.lang.String" itemvalue="outsidedays" />
+            <item index="10" class="java.lang.String" itemvalue="cpoutputformat" />
+            <item index="11" class="java.lang.String" itemvalue="cpposition" />
+            <item index="12" class="java.lang.String" itemvalue="bindlabel" />
+            <item index="13" class="java.lang.String" itemvalue="bindvalue" />
+            <item index="14" class="java.lang.String" itemvalue="bindabel" />
+            <item index="15" class="java.lang.String" itemvalue="groupby" />
+            <item index="16" class="java.lang.String" itemvalue="labelforid" />
+            <item index="17" class="java.lang.String" itemvalue="placeholder" />
+            <item index="18" class="java.lang.String" itemvalue="appendto" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="7">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="color-picker" />
           </list>
         </value>
       </option>
