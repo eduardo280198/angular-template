@@ -27,7 +27,11 @@ const routes: Routes = [
       },
       {
         path: 'forms',
-        loadChildren: () => import('./demo/forms/forms-routing.module').then( m => m.FORMS_ROUTES)
+        loadChildren: () => import('./demo/forms/form elements/formsElements-routing.module').then( m => m.FORMS_ELEMENTS_ROUTES )
+      },
+      {
+        path: 'formsLayout',
+        loadChildren: () => import('./demo/forms/formLayouts/formsLayouts-routing.module').then(m => m.FORMS_LAYOUTS_ROUTES ),
       },
       {
         path: 'color',
