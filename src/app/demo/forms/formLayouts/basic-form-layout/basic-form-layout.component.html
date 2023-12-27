@@ -1,0 +1,504 @@
+<div class="row">
+
+  <!--
+    Simple Form Layout
+  -->
+  <div class="col-sm-12 col-md-6">
+    <app-card
+      [cardTitle]="'Simple Form Layout'"
+    >
+      <form [formGroup]="formSimpleLayout">
+        <!-- Name: -->
+        <div class="form-group">
+          <label for="nameSimpleLayout" class="form-label">Name:</label>
+          <input id="nameSimpleLayout"
+                 type="text"
+                 class="form-control"
+                 placeholder="Enter Full Name"
+                 formControlName="name">
+          <!-- Mensaje de error si el campo 'name' es invalido y ha sido tocado -->
+          @if( formSimpleLayout.get('name').invalid && formSimpleLayout.get('name').touched ) {
+
+            @if( formSimpleLayout.get('name').getError('required') ){
+              <small class="form-text text-muted error">The name is required</small><br>
+            }
+
+            @if( formSimpleLayout.get('name').getError('minlength') ) {
+              <small class="form-text text-muted error">El nombre debe tener al menos 3 caracteres.</small><br>
+            }
+
+            @if( formSimpleLayout.get('name').getError('maxlength') ) {
+              <small class="form-text text-muted error">El nombre no puede tener mas de 50 caracteres.</small><br>
+            }
+
+            @if( formSimpleLayout.get('name').getError('specialCharacter') ) {
+              <small class="form-text text-muted error">El nombre no puede tener caracteres especiales.</small><br>
+            }
+
+          } @else {
+            <small class="form-text text-muted">Please enter your full name</small>
+          }
+        </div>
+
+        <!-- Email: -->
+        <div class="form-group">
+          <label for="emailSimpleLayout" class="form-label">Email:</label>
+          <input id="emailSimpleLayout"
+                 type="email"
+                 class="form-control"
+                 placeholder="Enter Email"
+                 formControlName="email">
+          <!-- Mensaje de error si el campo 'email' es invalido y ha sido tocado -->
+          @if( formSimpleLayout.get('email').invalid && formSimpleLayout.get('email').touched ){
+
+            @if( formSimpleLayout.get('email').getError('required') ){
+              <small class="form-text text-muted error">The email is required</small><br>
+            }
+
+            @if( formSimpleLayout.get('email').getError('pattern') ){
+              <small class="form-text text-muted error">El email no tiene el formato correcto.</small><br>
+            }
+
+          } @else{
+            <small class="form-text text-muted">Please enter your email</small>
+          }
+
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+          <label for="phoneSimpleLayout" class="form-label">Phone:</label>
+          <input id="phoneSimpleLayout"
+                 type="text"
+                 class="form-control"
+                 placeholder="Enter phone"
+                 formControlName="phone">
+          <!-- Mensaje de  error si el campo 'phone' es invalido -->
+          @if( formSimpleLayout.get('phone').invalid && formSimpleLayout.get('phone').touched ) {
+
+            @if( formSimpleLayout.get('phone').getError('required') ){
+              <small class="form-text text-muted error">The phone is required</small><br>
+            }
+
+            @if( formSimpleLayout.get('phone').getError('pattern') ){
+              <small class="form-text text-muted error">Is required 10 numbers</small><br>
+            }
+          } @else {
+            <small class="form-text text-muted">Please enter your phone</small>
+          }
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="passwordSimpleLayout" class="form-label">Password:</label>
+          <input id="passwordSimpleLayout"
+                 type="password"
+                 class="form-control"
+                 placeholder="Enter Password"
+                 formControlName="password">
+          <!-- Mensaje de  error si el campo 'password' es invalido -->
+          @if( formSimpleLayout.get('password').invalid && formSimpleLayout.get('password').touched ) {
+
+            @if( formSimpleLayout.get('password').getError('required') ){
+              <small class="form-text text-muted error">The password is required</small><br>
+            }
+
+            @if( formSimpleLayout.get('password').getError('minlength') ) {
+              <small class="form-text text-muted error">Min Length : 5 characters</small><br>
+            }
+          }
+        </div>
+
+        <div class="d-flex justify-content-end flex-wrap gap-2">
+          <button type="button" class="btn btn-primary" [disabled]="formSimpleLayout.invalid">Submit</button>
+          <button type="button" class="btn btn-danger" (click)="clearForm(formSimpleLayout)">Cancel</button>
+        </div>
+
+      </form>
+
+      <pre>{{formSimpleLayout.value | json}}</pre>
+
+    </app-card>
+  </div>
+
+  <!--
+    Horizontal Form Layout
+  -->
+  <div class="col-sm-12 col-md-6">
+    <app-card
+      [cardTitle]="'Horizontal Form Layout'"
+    >
+      <form [formGroup]="formHorizontalLayout">
+        <h5 class="mb-3">A. Personal Info:</h5>
+
+        <!-- Name -->
+        <div class="form-group row">
+          <label for="nameHorizontalLayout" class="col-lg-4 col-form-label">Name:</label>
+          <div class="col-lg-8">
+            <input id="nameHorizontalLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter full name"
+                   formControlName="name">
+            @if( formHorizontalLayout.get('name').invalid && formHorizontalLayout.get('name').touched ) {
+
+              @if( formHorizontalLayout.get('name').getError('required') ) {
+                <small class="form-text text-muted error">Name is required</small><br>
+              }
+
+              @if( formHorizontalLayout.get('name').getError('minlength') ) {
+                <small class="form-text text-muted error">El nombre debe tener al menos 3 letras</small><br>
+              }
+
+            } @else {
+              <small class="form-text text-muted">Please enter your full name</small> <br>
+            }
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group row">
+          <label for="emailHorizontalLayout" class="col-lg-4 col-form-label">Email:</label>
+          <div class="col-lg-8">
+            <input id="emailHorizontalLayout"
+                   type="email"
+                   class="form-control"
+                   placeholder="Enter email"
+                   formControlName="email">
+            @if( formHorizontalLayout.get('email').invalid && formHorizontalLayout.get('email').touched ) {
+
+              @if( formHorizontalLayout.get('email').getError('required') ) {
+                <small class="form-text text-muted error">Email is required.</small><br>
+              }
+
+              @if(formHorizontalLayout.get('email').getError('pattern') ) {
+                <small class="form-text text-muted error">El email no tiene el formato correcto.</small><br>
+              }
+
+            } @else {
+              <small class="form-text text-muted">Please enter your email</small> <br>
+            }
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <h5 class="mb-3">B. Educational Info</h5>
+
+        <!-- Degree Name -->
+        <div class="form-group row">
+          <label for="degreeNameHorizontalLayout" class="col-lg-4 col-form-label">Degree Name:</label>
+          <div class="col-lg-8">
+            <input id="degreeNameHorizontalLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter degree name"
+                   formControlName="degreeName">
+            @if( formHorizontalLayout.get('degreeName').invalid && formHorizontalLayout.get('degreeName').touched ) {
+
+              @if( formHorizontalLayout.get('degreeName').getError('required') ){
+                <small class="form-text text-muted error">Degree is required</small><br>
+              }
+
+            } @else{
+              <small class="form-text text-muted">Please enter your Final Degree</small>
+            }
+
+          </div>
+        </div>
+
+        <!-- Passing Year -->
+        <div class="form-group row">
+          <label for="passingYearHorizontalLayout" class="col-lg-4 col-form-label">Passing Year</label>
+          <div class="col-lg-8">
+            <input id="passingYearHorizontalLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter Passing Year"
+                   formControlName="passingYear">
+            @if( formHorizontalLayout.get('passingYear').invalid && formHorizontalLayout.get('passingYear').touched ) {
+              <small class="form-text text-muted error">Passing Year is required.</small>
+            }
+          </div>
+        </div>
+
+
+        <!-- Language -->
+<!--        <div class="form-group row align-items-center">-->
+<!--          <label class="col-lg-4 col-form-label">Language</label>-->
+<!--          <div class="col-lg-8">-->
+
+<!--            &lt;!&ndash; English &ndash;&gt;-->
+<!--            <div class="form-check form-check-inline">-->
+<!--              <input id="englishCheckboxHorizontalLayout"-->
+<!--                     type="checkbox"-->
+<!--                     class="form-check-input"-->
+<!--                     formControlName="language">-->
+<!--              <label for="englishCheckboxHorizontalLayout" class="form-check-label">English</label>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; French &ndash;&gt;-->
+<!--            <div class="form-check form-check-inline">-->
+<!--              <input id="frenchCheckboxHorizontalLayout"-->
+<!--                     type="checkbox"-->
+<!--                     class="form-check-input"-->
+<!--                     formControlName="language">-->
+<!--              <label for="frenchCheckboxHorizontalLayout" class="form-check-label">French</label>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Spanish &ndash;&gt;-->
+<!--            <div class="form-check form-check-inline">-->
+<!--              <input id="spanishCheckboxHorizontalLayout" type="checkbox" class="form-check-input">-->
+<!--              <label for="spanishCheckboxHorizontalLayout" class="form-check-label">Spanish</label>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; Dutch &ndash;&gt;-->
+<!--            <div class="form-check form-check-inline">-->
+<!--              <input id="dutchCheckboxHorizontalLayout" type="checkbox" class="form-check-input">-->
+<!--              <label for="dutchCheckboxHorizontalLayout" class="form-check-label">Dutch</label>-->
+<!--            </div>-->
+
+<!--          </div>-->
+<!--        </div>-->
+
+        <div class="d-flex justify-content-end flex-wrap gap-2">
+          <button type="button" class="btn btn-primary" [disabled]="formHorizontalLayout.invalid">Submit</button>
+          <button type="button" class="btn btn-danger" (click)="clearForm(formHorizontalLayout)">Cancel</button>
+        </div>
+
+      </form>
+
+      <pre>{{formHorizontalLayout.value | json}}</pre>
+    </app-card>
+  </div>
+
+  <!--
+    Form Grid
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Form Grid'"
+    >
+
+      <form [formGroup]="formGridLayout">
+
+        <div class="row">
+
+          <!-- First Name -->
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="firstNameFormGridLayout" class="form-label">First Name</label>
+            <input id="firstNameFormGridLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter your first name"
+                   formControlName="firstName">
+            @if( formGridLayout.get('firstName').invalid && formGridLayout.get('firstName').touched ){
+
+              @if( formGridLayout.get('firstName').getError('required') ){
+                <small class="form-text text-muted error">The First Name is required</small>
+              }
+
+              @if( formGridLayout.get('firstName').getError('minlength') ){
+                <small class="form-text text-muted error">El nombre debe tener al menos 3 caracteres.</small><br>
+              }
+
+              @if( formGridLayout.get('firstName').getError('maxlength') ){
+                <small class="form-text text-muted error">El nombre no puede tener mas de 50 caracteres.</small><br>
+              }
+
+              @if( formGridLayout.get('firstName').getError('specialCharacter') ){
+                <small class="form-text text-muted error">El nombre no puede tener caracteres especiales</small><br>
+              }
+
+            }
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="lastNameFormGridLayout" class="form-label">Last Name</label>
+            <input id="lastNameFormGridLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter your last name"
+                   formControlName="lastName">
+            @if( formGridLayout.get('lastName').invalid && formGridLayout.get('lastName').touched){
+
+              @if( formGridLayout.get('lastName').getError('required') ) {
+                <small class="form-text text-muted error">The Last Name is required.</small>
+              }
+
+              @if( formGridLayout.get('lastName').getError('minlength') ) {
+                <small class="form-text text-muted error">Debe tener al menos 3 caracteres.</small><br>
+              }
+
+              @if( formGridLayout.get('lastName').getError('maxlength') ) {
+                <small class="form-text text-muted error">No puede tener mas de 50 caracteres.</small><br>
+              }
+
+              @if( formGridLayout.get('lastName').getError('specialCharacter') ) {
+                <small class="form-text text-muted error">No puede tener caracteres especiales</small><br>
+              }
+
+            }
+
+          </div>
+
+          <!-- Company Name -->
+          <div class="form-group col-sm-12">
+            <label for="companyNameFormGridLayout" class="form-label">Company Name</label>
+            <input id="companyNameFormGridLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter company name"
+                   formControlName="companyName">
+            @if( formGridLayout.get('companyName').invalid && formGridLayout.get('companyName').touched ) {
+
+              @if( formGridLayout.get('companyName').getError('required') ) {
+                <small class="form-text text-muted error">The Company Name is required</small>
+              }
+
+              @if( formGridLayout.get('companyName').getError('minlength') ) {
+                <small class="form-text text-muted error">Debe tener al menos 3 caracteres</small><br>
+              }
+
+              @if( formGridLayout.get('companyName').getError('maxlength') ) {
+                <small class="form-text text-muted error">No puede tener mas de 50 caracteres</small><br>
+              }
+
+              @if( formGridLayout.get('companyName').getError('specialCharacter') ) {
+                <small class="form-text text-muted error">No puede tener caracteres especiales</small><br>
+              }
+
+            }
+
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="phoneNumberFormGridLayout" class="form-label">Phone Number</label>
+            <input id="phoneNumberFormGridLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="(981) 000 0000"
+                   formControlName="phoneNumber">
+            @if( formGridLayout.get('phoneNumber').invalid && formGridLayout.get('phoneNumber').touched ) {
+
+              @if( formGridLayout.get('phoneNumber').getError('required') ) {
+                <small class="form-text text-muted error">The Phone Number is required</small>
+              }
+
+              @if( formGridLayout.get('phoneNumber').getError('pattern') ) {
+                <small class="form-text text-muted error">Is required 10 numbers</small><br>
+              }
+
+            }
+
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="emailAddressFormGridLayout" class="form-label">Email Address</label>
+            <input id="emailAddressFormGridLayout"
+                   type="email"
+                   class="form-control"
+                   placeholder="example@gmail.com"
+                   formControlName="emailAddress">
+            @if( formGridLayout.get('emailAddress').invalid && formGridLayout.get('emailAddress').touched ) {
+
+              @if( formGridLayout.get('emailAddress').getError('required') ) {
+                <small class="form-text text-muted error">The Email Address is required</small>
+              }
+
+              @if( formGridLayout.get('emailAddress').getError('pattern') ) {
+                <small class="form-text text-muted error">El email no tiene el formato correcto.</small><br>
+              }
+
+            }
+
+          </div>
+
+          <!-- Address -->
+          <div class="form-group col-sm-12">
+            <label for="addressFormGridLayout" class="form-label">Address</label>
+            <input id="addressFormGridLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Address 1"
+                   formControlName="address">
+            @if( formGridLayout.get('address').invalid && formGridLayout.get('address').touched ) {
+
+              @if( formGridLayout.get('address').getError('required') ) {
+                <small class="form-text text-muted error">The Address is required</small>
+              }
+
+              @if( formGridLayout.get('address').getError('maxlength') ) {
+                <small class="form-text text-muted error">No puede tener mas de 80 caracteres.</small><br>
+              }
+
+            }
+
+          </div>
+
+          <!-- City -->
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="cityFormGroupLayout" class="form-label">City</label>
+            <input id="cityFormGroupLayout"
+                   type="text"
+                   class="form-control"
+                   placeholder="Enter your city"
+                   formControlName="city">
+            @if( formGridLayout.get('city').invalid && formGridLayout.get('city').touched ) {
+
+              @if( formGridLayout.get('city').getError('required') ) {
+                <small class="form-text text-muted error">The City es required.</small>
+              }
+
+              @if( formGridLayout.get('city').getError('maxlength') ) {
+                <small class="form-text text-muted error">No puede tener mas de 40 caracteres.</small><br>
+              }
+
+              @if( formGridLayout.get('city').getError('specialCharacter') ) {
+                <small class="form-text text-muted error">No puede tener caracteres especiales.</small><br>
+              }
+
+            }
+
+          </div>
+
+          <!-- State -->
+          <div class="form-group col-sm-12 col-md-6">
+            <label for="stateFormGroup" class="form-label">State</label>
+            <select id="stateFormGroup" class="form-select" formControlName="state">
+              <option value="">Choose...</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+              <option value="option5">Option 5</option>
+            </select>
+            @if( formGridLayout.get('state').invalid && formGridLayout.get('state').touched ) {
+
+              @if( formGridLayout.get('state').getError('required') ) {
+                <small class="form-text text-muted error">The State is required</small>
+              }
+
+            }
+
+          </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex justify-content-end flex-wrap gap-2">
+          <button type="button" class="btn btn-primary" [disabled]="formGridLayout.invalid">Submit</button>
+          <button type="button" class="btn btn-danger" (click)="clearForm(formGridLayout)">Cancel</button>
+        </div>
+
+      </form>
+
+      <pre>{{formGridLayout.value | json}}</pre>
+
+    </app-card>
+  </div>
+
+</div>
