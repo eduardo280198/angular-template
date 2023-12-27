@@ -125,13 +125,13 @@ const NavigationItems = [
             url: 'basic/badges',
             target: false
           },
-          {
-            id: 'breadcrumb',
-            title: 'Breadcrumb',
-            type: 'item',
-            url: 'basic/breadcrumb',
-            target: false,
-          },
+          // {
+          //   id: 'breadcrumb',
+          //   title: 'Breadcrumb',
+          //   type: 'item',
+          //   url: 'basic/breadcrumb',
+          //   target: false,
+          // },
           {
             id: 'pagination',
             title: 'Pagination',
@@ -216,13 +216,13 @@ const NavigationItems = [
             url     : 'basic/tabs-pills',
             target  : false,
           },
-          {
-            id      : 'toast',
-            title   : 'Toasts',
-            type    : 'item',
-            url     : 'basic/toast',
-            target  : false,
-          },
+          // {
+          //   id      : 'toast',
+          //   title   : 'Toasts',
+          //   type    : 'item',
+          //   url     : 'basic/toast',
+          //   target  : false,
+          // },
           {
             id      : 'other',
             title   : 'Other',
@@ -298,9 +298,38 @@ const NavigationItems = [
             type    : 'item',
             url     : 'forms/picker',
             target  : false,
+          },
+          {
+            id      : 'form-select',
+            title   : 'Form Select',
+            type    : 'item',
+            url     : 'forms/select',
+            target  : false
           }
         ]
       },
+      {
+        id        : 'form-layouts',
+        title     : 'Form Layouts',
+        type      : 'collapse',
+        icon      : 'ti ti-layout',
+        children  : [
+          {
+            id      : 'basicFormLayout',
+            title   : 'Basic Layout',
+            type    : 'item',
+            url     : 'formsLayout/layout',
+            target  : false,
+          },
+          {
+            id      : 'wizardFormLayout',
+            title   : 'Wizard Layout',
+            type    : 'item',
+            url     : 'formsLayout/wizard',
+            target  : false,
+          }
+        ]
+      }
     ]
   },
   {
