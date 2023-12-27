@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import {CardModule} from "../../../theme/shared/components";
+import {CardModule} from "../../../../theme/shared/components";
 
 @Component({
   selector: 'app-form-advance',
