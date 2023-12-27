@@ -19,6 +19,12 @@ import { SharedModule } from './theme/shared/shared.module';
 import { ConfigurationComponent } from './theme/layout/admin/configuration/configuration.component';
 import { GuestComponent } from './theme/layout/guest/guest.component';
 
+import { NgxMaterialTimepickerModule } from "ngx-material-timepicker";
+import {ColorPickerModule} from "ngx-color-picker";
+import {NgSelectModule} from "@ng-select/ng-select";
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +41,17 @@ import { GuestComponent } from './theme/layout/guest/guest.component';
     ConfigurationComponent,
     GuestComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    SharedModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    NgxMaterialTimepickerModule,
+    ColorPickerModule,
+    NgSelectModule,
+    FormsModule
+  ],
   providers: [NavigationItem],
   bootstrap: [AppComponent]
 })
