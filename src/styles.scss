@@ -8,6 +8,9 @@ File: style.css
 =========================================================================
 =================================================================================== */
 
+// themes
+@import "@ng-select/ng-select/themes/default.theme.css";
+
 // main framework
 @import 'scss/settings/preset-variables';
 @import 'node_modules/bootstrap/scss/functions';
@@ -38,3 +41,5 @@ $pc-secondary: map-get($preset-colors, 'preset-1', 'secondary');
 // fonts
 @import url('scss/fonts/berry/berry-icons.css'); /** custom font icons - berry **/
 @import 'scss/fonts/tabler-icons.min.css';
+
+
