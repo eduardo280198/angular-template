@@ -1,0 +1,728 @@
+<div class="row">
+
+  <!--
+  Default Datetime picker
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Default Datetime Picker'"
+    >
+
+      <div class="row">
+
+        <!-- Default Date -->
+        <div class="col-md-4 mb-3">
+          <h5>Date</h5>
+          <hr>
+
+          <input id="dateDefault" type="date" class="form-control" placeholder="Date" >
+        </div>
+
+        <!-- Default Month -->
+        <div class="col-md-4 mb-3">
+          <h5>Month</h5>
+          <hr>
+
+          <input id="monthDefault" type="month" class="form-control" placeholder="Month">
+        </div>
+
+        <!-- Default Week -->
+        <div class="col-md-4 mb-3">
+          <h5>Week</h5>
+          <hr>
+
+          <input id="weekDefault" type="week" class="form-control" placeholder="Week">
+        </div>
+
+        <!-- Default Local DateTime -->
+        <div class="col-md-4 mb-3">
+          <h5>Default Datetime Picker</h5>
+          <hr>
+          <input id="localDateTimeDefault" type="datetime-local" class="form-control" placeholder="local Datetime">
+        </div>
+
+        <!-- Default Time -->
+        <div class="col-md-4 mb-3">
+          <h5>Time</h5>
+          <hr>
+          <input id="timeDefault" type="time" class="form-control" placeholder="Time">
+        </div>
+
+      </div>
+
+    </app-card>
+  </div>
+
+  <!--
+    Material Time Picker (ngx-material-timepicker)
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Material Time Picker'"
+    >
+
+      <div class="row">
+        <!-- Basic Time Picker -->
+        <div class="col-md-6 mb-3">
+          <h5>Basic Time Picker</h5>
+          <hr>
+          <div>
+            <input
+              id="materialTime"
+              type="text"
+              class="form-control"
+              aria-label="12hr format"
+              placeholder="12:00 AM"
+              [ngxTimepicker]="predeterminado"
+              readonly
+            >
+            <ngx-material-timepicker #predeterminado></ngx-material-timepicker>
+          </div>
+        </div>
+
+        <!-- Restrict user to select hour and AM only -->
+        <div class="col-md-6 mb-3">
+          <h5>Restrict user to select hour and AM only</h5>
+          <hr>
+          <div>
+            <input
+              id="materialTime24hr"
+              type="text"
+              class="form-control"
+              aria-label="24hr format"
+              placeholder="12:00"
+              [ngxTimepicker]="fullTime"
+              [format]="24"
+              readonly
+            >
+            <ngx-material-timepicker #fullTime></ngx-material-timepicker>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="mt-5">Min and Max Value</h3>
+      <hr>
+      <div class="row">
+
+        <!-- Min Time -->
+        <div class="col-md-4 mb-3">
+          <h5>Min Time</h5>
+          <hr>
+
+          <div>
+            <input type="text" class="form-control" [ngxTimepicker]="min" [min]="'03:15 am'" placeholder="Min time 03:15" readonly>
+            <ngx-material-timepicker #min></ngx-material-timepicker>
+          </div>
+        </div>
+
+        <!-- Max Time -->
+        <div class="col-md-4 mb-3">
+          <h5>Max Time</h5>
+          <hr>
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              [ngxTimepicker]="max"
+              max="06:18 pm"
+              placeholder="Max time 06:18 pm"
+              readonly
+            >
+            <ngx-material-timepicker #max></ngx-material-timepicker>
+          </div>
+        </div>
+
+        <!-- Time range -->
+        <div class="col-md-4 mb-3">
+          <h5>Range Time</h5>
+          <hr>
+          <div>
+            <input
+              type="text"
+              class="form-control"
+              [ngxTimepicker]="range"
+              min="06:10 am"
+              max="08:11 pm"
+              placeholder="Range from 06:10 am to 08:11 pm"
+              readonly
+            >
+            <ngx-material-timepicker #range></ngx-material-timepicker>
+          </div>
+        </div>
+
+      </div>
+
+    </app-card>
+  </div>
+
+  <!--
+    Bootstrap Datepicker (ng-bootstrap)
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Bootstrap Datepicker'"
+    >
+      <div class="row">
+
+        <!-- Simple Popup -->
+        <!-- ng add @angular/localize para que funcione correctamente la navegacion de ngbDatepicker -->
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <h5>Simple Popup</h5>
+          <hr>
+          <form>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="yyyy-mm-dd"
+                name="dp"
+                navigation="select"
+                [(ngModel)]="modelSimplePopup"
+                ngbDatepicker
+                #d=ngbDatepicker
+                (click)="d.toggle()"
+                readonly
+              >
+              <span
+                class="input-group-text"
+                (click)="d.toggle()"
+              >
+              <i class="ti ti-calendar"></i>
+            </span>
+            </div>
+            <pre>Model: {{ modelSimplePopup | json }}</pre>
+            <h5>Select Today</h5>
+            <button type="button" class="btn btn-primary" (click)="modelSimplePopup = today">Select Today</button>
+          </form>
+        </div>
+
+        <!-- Simple Inline -->
+        <div class="col-sm-12 col-xl-6 mb-3">
+          <h5>Simple Inline</h5>
+          <hr>
+          <div class="row">
+            <!-- Calendar -->
+            <div class="col-md-6 mb-3">
+              <ngb-datepicker #dp [(ngModel)]="modelSimpleInline" (navigate)="dateSimpleInline = $event.next"/>
+            </div>
+
+            <!-- Info -->
+            <div class="col-md-6 ">
+              <pre>Month: {{dateSimpleInline.month}}/{{dateSimpleInline.year}}</pre>
+              <pre>Selected Date: {{ modelSimpleInline | json }}</pre>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Disabled -->
+        <div class="col-md-12 col-lg-6 mb-3">
+          <h5>Disabled</h5>
+          <hr>
+
+          <ngb-datepicker [(ngModel)]="modelDisabled" [disabled]="disabled"></ngb-datepicker>
+          <br>
+          <button
+            class="btn btn-{{ disabled ? 'danger' : 'success'}} mt-3"
+            (click)="disabled = !disabled"
+          >
+            {{ disabled ? 'Disabled' : 'Enabled' }}
+          </button>
+
+        </div>
+
+        <!-- Custom Day -->
+        <div class="col-md-12 col-lg-6 mb-3">
+          <h5>Custom Day</h5>
+          <hr>
+          <div class="input-group">
+            <input
+              class="form-control"
+              placeholder="yyy-mm-dd"
+              name="dp"
+              [(ngModel)]="modelCustomDay"
+              ngbDatepicker
+              [dayTemplate]="customDay"
+              [markDisabled]="isDisabled"
+              #dCustom='ngbDatepicker'
+            >
+            <button
+              type="button"
+              class="btn btn-outline-secondary ti ti-calendar"
+              (click)="dCustom.toggle()"
+            ></button>
+          </div>
+
+          <!-- Calendario personalizado -->
+          <ng-template
+            #customDay
+            let-date
+            let-currentMonth='currentMonth'
+            let-selected='selected'
+            let-disabled='disabled'
+            let-focused='focused'
+          >
+            <span
+              class="custom-calendar"
+              [class.weekend]="isWeekend(date)"
+              [class.focused]="focused"
+              [class.bg-primary]="selected"
+              [class.hidden]="date.month !== currentMonth"
+              [class.text-muted]="disabled"
+            >
+              {{ date.day }}
+            </span>
+          </ng-template>
+        </div>
+
+        <!-- Range Selection -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h5>Range Picker</h5>
+            <hr>
+
+            <div class="horizontal-scroll">
+              <ngb-datepicker
+                #dRange
+                (dateSelect)="onDateSelection($event)"
+                [displayMonths]="2"
+                [dayTemplate]="t"
+                outsideDays="hidden"
+              />
+            </div>
+            <!-- Custom Calendar? -->
+            <ng-template
+              #t
+              let-date
+              let-focused='focused'
+            >
+              <span
+                class="custom-day"
+                [class.focused]="focused"
+                [class.range]="isRange(date)"
+                [class.faded]="isHovered(date) || isInside(date)"
+                (mouseenter)="hoveredDate = date"
+                (mouseleave)="hoveredDate = null"
+              >
+                {{ date.day }}
+              </span>
+            </ng-template>
+
+            <br>
+
+            <pre>From: {{ fromDate | json }}</pre>
+            <pre>To: {{ toDate | json }}</pre>
+
+          </div>
+        </div>
+
+        <!-- Multiple Months -->
+        <div class="row">
+          <div class="col-sm-12 mb-3">
+            <!-- Calendars -->
+            <div class="horizontal-scroll">
+              <ngb-datepicker
+                [displayMonths]="displayMonths"
+                [navigation]="navigation"
+                [showWeekNumbers]="showWeekNumbers"
+                [outsideDays]="outsideDays"
+              />
+            </div>
+
+            <!-- Selects -->
+            <div class="row">
+              <div class="col-sm-12 col-md-4">
+                <select class="form-select" [(ngModel)]="displayMonths">
+                  <option [ngValue]="1">One Month</option>
+                  <option [ngValue]="2">Two Month</option>
+                  <option [ngValue]="3">Three Month</option>
+                </select>
+              </div>
+
+              <div class="col-sm-12 col-md-4">
+                <select class="form-select" [(ngModel)]="navigation">
+                  <option value="none">Without navigation</option>
+                  <option value="select">With select boxes</option>
+                  <option value="arrows">Without select boxes</option>
+                </select>
+              </div>
+
+              <div class="col-sm-12 col-md-4">
+                <select class="form-select" [(ngModel)]="showWeekNumbers">
+                  <option [ngValue]="true">Week numbers</option>
+                  <option [ngValue]="false">No week numbers</option>
+                </select>
+              </div>
+
+              <div class="col-sm-12 col-md-4">
+                <select class="form-select" [(ngModel)]="outsideDays">
+                  <option value="visible">Visible outside days</option>
+                  <option value="hidden">Hidden outside days</option>
+                  <option value="collapsed">Collapsed outside days</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </app-card>
+  </div>
+
+  <!--
+    Color Picker (ngx-color-picker)
+  -->
+  <div class="col-sm-12">
+    <app-card
+      [cardTitle]="'Color Picker'"
+    >
+
+      <div class="row">
+
+        <!-- Basic -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Basic</h5>
+          <hr>
+          <input
+            class="form-control"
+            [(colorPicker)]="colorBasic"
+            [style.background]="colorBasic"
+            cpPosition="auto"
+          >
+          <p>
+            set colorPicker <code>#2f6a87 any color</code> and set style <code>background</code>
+          </p>
+        </div>
+
+        <!-- Show Color Code -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Show Color Code</h5>
+          <hr>
+          <input
+            class="form-control"
+            [(colorPicker)]="colorShowColorCode"
+            [style.background]="colorShowColorCode"
+            cpPosition="auto"
+            [value]="colorShowColorCode"
+          >
+          <p>set attribute <code>value</code></p>
+        </div>
+
+        <!-- Code Format -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Code Format</h5>
+          <hr>
+          <!-- hsla -->
+          <input
+            class="form-control"
+            [(colorPicker)]="colorCodeFormatHsla"
+            [style.background]="colorCodeFormatHsla"
+            cpPosition="auto"
+            cpOutputFormat="hsla"
+            [value]="colorCodeFormatHsla"
+          >
+          <br>
+          <!-- rgba -->
+          <input
+            class="form-control"
+            [(colorPicker)]="colorCodeFormatRgba"
+            [style.background]="colorCodeFormatRgba"
+            cpPosition="auto"
+            cpOutputFormat="rgba"
+            [value]="colorCodeFormatRgba"
+          >
+          <p>
+            Set attribute cpOutputFormat with <code>hex-default, rgba, hsla</code>
+          </p>
+
+        </div>
+
+        <!-- Element Color -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Element Color</h5>
+          <hr>
+          <h2>
+            <span
+              [(colorPicker)]="colorElementColor"
+              [style.color]="colorElementColor"
+              cpPosition = "top"
+              [cpPositionOffset]="'50%'"
+              [cpPositionRelativeToArrow]="true"
+            >Change me!</span>
+          </h2>
+          <p>
+            set attribute <code>cpPositionRelativeToArrow, cpPositionOffset</code>
+          </p>
+        </div>
+
+      </div> <!-- Row -->
+
+      <!-- TODO: Arreglar que sale mal la ventanita para seleccionar algun color, apartir de este punto. -->
+      <div class="row">
+
+        <!-- Cancel Button -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Cancel Button</h5>
+          <hr>
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'auto'"
+            [cpCancelButton]="true"
+            [cpCancelButtonClass]="'btn btn-danger btn-sm'"
+            [value]="color"
+          >
+          <p>
+            set cpCancelButton <code>true/false</code> and class
+            cpCancelButtonClass <code>btn btn-primary btn-sm</code>
+          </p>
+        </div>
+
+        <!-- Ok Button - Multiple -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>OK Button - Multiple</h5>
+          <hr>
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'auto'"
+            [value]="color"
+            [cpOKButton]="true"
+            [cpOKButtonClass]="'btn btn-success btn-sm'"
+            [cpSaveClickOutside]="false"
+            [cpCancelButton]="true"
+            [cpCancelButtonClass]="'btn btn-danger btn-sm'"
+          >
+          <p>set cpOKButton <code>true/false</code> and class cpCancelButtonClass <code>btn btn-primary btn-sm</code></p>
+        </div>
+
+        <!-- Eye Dropper -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Eye Dropper</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'auto'"
+            [value]="color"
+            [cpEyeDropper]="true"
+            [cpSaveClickOutside]="false"
+            [cpOKButton]="true"
+            [cpOKButtonClass]="'btn btn-success btn-sm'"
+          >
+          <p>
+            Set attribute cpEyeDropper <code>true/false</code>
+          </p>
+        </div>
+
+        <!-- Toggle Event -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Toggle Event</h5>
+          <hr>
+
+          <input
+            #ignoredInput
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'auto'"
+            [value]="color"
+            [cpIgnoredElements]="[ignoredButton, ignoredInput]"
+            [(cpToggle)]="toggle"
+          >
+          <button
+            #ignoredButton
+            class="btn btn-secondary btn-sm"
+            (click)="toggle = !toggle"
+          >
+            Toggle
+          </button>
+          <p>
+            set cpToggle <code>toggle</code> with button
+          </p>
+
+        </div>
+
+        <!-- Preset Colors -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Preset Colors</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'auto'"
+            [value]="color"
+            [cpPresetColors]="['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']"
+          >
+
+          <p>
+            set cpPresetColors <code>['#fff', '#000', '#2889e9', '#e920e9', '#fff500', 'rgb(236,64,64)']</code>
+          </p>
+        </div>
+
+        <!-- Add and Remove Preset Colors -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Add and Remove Preset Colors</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'auto'"
+            [value]="color"
+            [cpAlphaChannel]="'always'"
+            [cpOutputFormat]="'rgba'"
+            [cpPresetColors]="['#fff', '#2889e9']"
+            [cpAddColorButton]="true"
+            [cpAddColorButtonClass]="'btn btn-outline-success btn-sm'"
+
+          >
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <!-- Position Bottom -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Position Bottom</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'bottom'"
+          >
+          <p>set cpPosition <code>bottom</code></p>
+        </div>
+
+        <!-- Position Top -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Position Top</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'top'"
+          >
+          <p>set cpPosition <code>top</code></p>
+        </div>
+
+        <!-- Position Right -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Position Right</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'right'"
+          >
+          <p>set cpPosition <code>right</code></p>
+        </div>
+
+        <!-- Position Left -->
+        <div class="col-sm-12 col-xl-3">
+          <h5>Position Left</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="color"
+            [style.background]="color"
+            [cpPosition]="'left'"
+          >
+          <p>set cpPosition <code>left</code></p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <!-- RGB Transparent -->
+        <div class="col-sm-12 col-xl-4">
+          <h5>RGB Transparent</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="colorRGBTransparent"
+            [style.background]="colorRGBTransparent"
+            [cpPosition]="'top'"
+            [cpAlphaChannel]="'disabled'"
+            [cpOutputFormat]="'rgba'"
+            [value]="colorRGBTransparent"
+          >
+          <p>set cpOutputFormat <code>rgba</code></p>
+        </div>
+
+        <!-- RGBA Transparent -->
+        <div class="col-sm-12 col-xl-4">
+          <h5>RGBA Transparent</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="colorRGBATransparent"
+            [style.background]="colorRGBATransparent"
+            [cpPosition]="'top'"
+            [cpAlphaChannel]="'always'"
+            [cpOutputFormat]="'rgba'"
+            [value]="colorRGBTransparent"
+          >
+          <p>set cpAlphaChannel <code>always </code> with cpOutputFormat <code>rgba</code></p>
+        </div>
+
+        <!-- HEX Transparent -->
+        <div class="col-sm-12 col-xl-4">
+          <h5>HEX Transparent</h5>
+          <hr>
+
+          <input
+            class="form-control"
+            [(colorPicker)]="colorHEXTransparent"
+            [style.background]="colorHEXTransparent"
+            [cpPosition]="'top'"
+            [cpAlphaChannel]="'always'"
+            [cpOutputFormat]="'hex'"
+            [value]="colorHEXTransparent"
+          >
+          <p>set cpOutputFormat <code>hex</code> with cpAlphaChannel <code>always</code></p>
+        </div>
+
+      </div>
+
+      <!-- Inline Color Picker -->
+      <div class="row">
+        <h5>Inline Color Picker</h5>
+        <hr>
+
+        <div class="col-sm-6">
+          <span
+            [(colorPicker)]="colorInline"
+            [style.background]="colorInline"
+            [cpToggle]="true"
+            [cpDialogDisplay]="'inline'"
+            [cpCancelButton]="true"
+            [cpCancelButtonClass]="'btn btn-danger btn-sm'"
+          ></span>
+        </div>
+
+      </div>
+
+    </app-card>
+  </div>
+
+</div>
